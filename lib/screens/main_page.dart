@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school/screens/research.dart';
 import 'package:school/screens/steps.dart';
 
 class MainPage extends StatelessWidget {
@@ -35,13 +36,20 @@ class MainPage extends StatelessWidget {
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
-                Card(
-                  child: SizedBox(
-                    width: 150,
-                    height: 60,
-                    child: Center(
-                      child: Text('بـــــحوث التـــــخرج'),
+              children:  [
+                InkWell(
+                  onTap: (){
+                    Navigator.push(
+                        context,MaterialPageRoute(builder: (context)=>const Research())
+                    );
+                  },
+                  child: const Card(
+                    child: SizedBox(
+                      width: 150,
+                      height: 60,
+                      child: Center(
+                        child: Text('بـــــحوث التـــــخرج'),
+                      ),
                     ),
                   ),
                 ),  Card(
