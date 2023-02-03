@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school/screens/books.dart';
 import 'package:school/screens/research.dart';
 import 'package:school/screens/steps.dart';
 
@@ -52,15 +53,24 @@ class MainPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),  Card(
-                  child: SizedBox(
-                    width: 150,
-                    height: 60,
-                    child: Center(
-                      child: Text('كتـــــب عامـــــــــة'),
-                    ),
-                  ),
                 ),
+
+                 InkWell(
+                   onTap: (){
+                     Navigator.push(
+                         context,MaterialPageRoute(builder: (context)=>const Books())
+                     );
+                   },
+                   child: Card(
+                    child: SizedBox(
+                      width: 150,
+                      height: 60,
+                      child: Center(
+                        child: Text('كتـــــب عامـــــــــة'),
+                      ),
+                    ),
+                ),
+                 ),
               ],
             )
 

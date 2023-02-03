@@ -7,7 +7,7 @@ class Steps extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Steps'),
+        title: Text('هندسة تقنيات الحاسوب'),
       ),
       body: Center(
         child: Column(

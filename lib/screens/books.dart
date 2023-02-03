@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Research extends StatelessWidget {
-  const Research({Key? key}) : super(key: key);
+class Books extends StatelessWidget {
+  const Books({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('بحوث التخرج'),),
+      appBar: AppBar(title: Text('كتب عامه'),),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -20,7 +20,7 @@ class Research extends StatelessWidget {
                     width: 150,
                     height: 60,
                     child: Center(
-                      child: Text('الصيدلة'),
+                      child: Text('رياضيات'),
                     ),
                   ),
                 ),
@@ -29,7 +29,7 @@ class Research extends StatelessWidget {
                     width: 150,
                     height: 60,
                     child: Center(
-                      child: Text('طب أسنان'),
+                      child: Text('فيزياء'),
                     ),
                   ),
                 ),
@@ -62,7 +62,7 @@ class Research extends StatelessWidget {
                     width: 150,
                     height: 60,
                     child: Center(
-                      child: Text('هندسة حاسبات'),
+                      child: Text('هندسة'),
                     ),
                   ),
                 ),
@@ -71,7 +71,7 @@ class Research extends StatelessWidget {
                     width: 150,
                     height: 60,
                     child: Center(
-                      child: Text('تحليلات مرضية'),
+                      child: Text('طب'),
                     ),
                   ),
                 ),
@@ -80,7 +80,7 @@ class Research extends StatelessWidget {
                     width: 150,
                     height: 60,
                     child: Center(
-                      child: Text('رياضة'),
+                      child: Text('فسلجه'),
                     ),
                   ),
                 ),
