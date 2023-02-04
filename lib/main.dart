@@ -4,7 +4,7 @@ import 'package:school/screens/main_page.dart';
 void main() {
   runApp(const MyApp());
 }
-
+//hello
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      darkTheme: ThemeData.dark(),
       theme: ThemeData(
           primarySwatch: Colors.blue,
       ),
