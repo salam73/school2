@@ -4,8 +4,7 @@ import 'package:school/screens/main_page.dart';
 void main() {
   runApp(const MyApp());
 }
-//its a good to see you
-
+// what is that man
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
