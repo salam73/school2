@@ -4,6 +4,8 @@ import 'package:school/screens/main_page.dart';
 void main() {
   runApp(const MyApp());
 }
+
+//nice to meet you
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -15,10 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'محمد الصافي',
       darkTheme: ThemeData.dark(),
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue,
       ),
       home: const MainPage(),
     );
   }
 }
-
