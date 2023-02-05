@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:school/screens/level_three/books_level_three.dart';
+
+import 'level_four/books_level_four.dart';
+
 
 class Steps extends StatelessWidget {
   const Steps({Key? key}) : super(key: key);
@@ -12,14 +16,18 @@ class Steps extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-
-          children: const [
+          children:  [
             Card(
               child: SizedBox(
                 width: 300,
                 height: 60,
                 child: Center(
-                  child: Text('المرحلة الاولى'),
+                  child: InkWell(
+                    onTap: (){
+
+                    },
+                    child: Text('المرحلة الاولى'),
+                  ),
                 ),
               ),
             ),
@@ -32,21 +40,35 @@ class Steps extends StatelessWidget {
                 ),
               ),
             ),
-            Card(
-              child: SizedBox(
-                width: 300,
-                height: 60,
-                child: Center(
-                  child: Text('المرحلة الثالث'),
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                    context,MaterialPageRoute(builder: (context)=>const BooksLevelThree())
+                );
+              },
+              child: Card(
+                child: SizedBox(
+                  width: 300,
+                  height: 60,
+                  child: Center(
+                    child: Text('المرحلة الثالث'),
+                  ),
                 ),
               ),
             ),
-            Card(
-              child: SizedBox(
-                width: 300,
-                height: 60,
-                child: Center(
-                  child: Text('المرحلة الرابعة'),
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                    context,MaterialPageRoute(builder: (context)=>const BooksLevelFour())
+                );
+              },
+              child: Card(
+                child: SizedBox(
+                  width: 300,
+                  height: 60,
+                  child: Center(
+                    child: Text('المرحلة الرابعة'),
+                  ),
                 ),
               ),
             ),
